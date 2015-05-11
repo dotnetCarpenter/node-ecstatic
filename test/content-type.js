@@ -2,10 +2,11 @@
 var test = require('tap').test,
     http = require('http'),
     request = require('request'),
-    ecstatic;
+    ecstatic = require('../');
 
 function setup(opts) {
-  ecstatic = require('../');
+  // get a fresh ecstatic with a new mime object
+  ecstatic.resetMimeTypes();
   return http.createServer(ecstatic(opts));
 }
 function teardown(t) {
