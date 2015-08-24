@@ -7,7 +7,7 @@ var test = require('tap').test,
     path = require('path');
 
 var root = __dirname + '/public',
-    baseDir = 'base';
+    baseDir = 'base'; /*FIXME: base is not a folder - why do we have this?  */
 
 test('304_not_modified', function (t) {
   var port = Math.floor(Math.random() * ((1<<16) - 1e4) + 1e4),

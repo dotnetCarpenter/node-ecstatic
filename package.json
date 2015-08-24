@@ -12,7 +12,10 @@
   "scripts": {
     "test": "tap test/*.js"
   },
-  "bin": "./lib/ecstatic.js",
+  "bin": {
+    "ecstatic": "./lib/ecstatic.js",
+    "dump": "bin/dump.js"
+  },
   "keywords": [
     "static",
     "web",
