@@ -12,7 +12,7 @@ var root = __dirname + '/public',
 test('304_not_modified', function (t) {
   var port = Math.floor(Math.random() * ((1<<16) - 1e4) + 1e4),
       file = 'a.txt';
-  
+
   var server = http.createServer(
     ecstatic({
       root: root,
@@ -54,7 +54,7 @@ test('304_not_modified', function (t) {
 test('304_not_modified_weak', function (t) {
   var port = Math.floor(Math.random() * ((1<<16) - 1e4) + 1e4),
       file = 'b.txt';
-  
+
   var server = http.createServer(
     ecstatic({
       root: root,
@@ -97,7 +97,7 @@ test('304_not_modified_weak', function (t) {
 test('304_not_modified_strong_compare', function (t) {
   var port = Math.floor(Math.random() * ((1<<16) - 1e4) + 1e4),
       file = 'b.txt';
-  
+
   var server = http.createServer(
     ecstatic({
       root: root,
@@ -156,7 +156,7 @@ test('304_not_modified_strong_compare', function (t) {
 test('304_not_modified_weak_compare', function (t) {
   var port = Math.floor(Math.random() * ((1<<16) - 1e4) + 1e4),
       file = 'c.js';
-  
+
   var server = http.createServer(
     ecstatic({
       root: root,
