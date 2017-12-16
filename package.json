@@ -12,7 +12,7 @@
   "scripts": {
     "fix": "eslint --fix ./lib/ ./example/ ./test",
     "pretest": "eslint ./lib/ ./example/ ./test",
-    "test": "tap --jobs-auto --coverage test/*.js",
+    "test": "tap --coverage test/*.js",
     "posttest": "tap --coverage-report=clover"
   },
   "bin": "./lib/ecstatic.js",
@@ -26,19 +26,19 @@
   ],
   "dependencies": {
     "he": "^1.1.1",
-    "mime": "^1.4.0",
-    "minimist": "^1.1.0",
+    "mime": "^2.0.3",
+    "minimist": "^1.2.0",
     "url-join": "^2.0.2"
   },
   "devDependencies": {
     "eol": "^0.9.1",
-    "eslint": "^3.19.0",
-    "eslint-config-airbnb-base": "^11.2.0",
-    "eslint-plugin-import": "^2.3.0",
-    "express": "^4.12.3",
+    "eslint": "^4.13.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "express": "^4.16.2",
     "mkdirp": "^0.5.0",
-    "request": "^2.49.0",
-    "tap": "^10.3.3"
+    "request": "^2.83.0",
+    "tap": "^11.0.0"
   },
   "license": "MIT"
 }
